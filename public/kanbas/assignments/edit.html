@@ -10,9 +10,9 @@
             <tr valign="baseline">
                 <td>
                     <ul>
-                        <li><a href="#">Account</a></li>
+                        <li><a href="/kanbas/profile/index.html">Account</a></li>
                         <li><a href="#">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
+                        <li><a href="/kanbas/home.html">Courses</a></li>
                         <li><a href="#">Calendar</a></li>
                         <li><a href="#">inbox</a></li>
                         <li><a href="#">History</a></li>
@@ -23,13 +23,13 @@
                 </td>
                 <td>
                     <ul>
-                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="/kanbas/home.html">Home</a></li>
                         <li><a href="#">Modules</a></li>
                         <li><a href="#">Piazza</a></li>
                         <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="index.html">Assignments</a></li>
+                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
                         <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
+                        <li><a href="/kanbas/grades.html">Grades</a></li>
                         <li><a href="#">People</a></li>
                         <li><a href="#">Panopto Video</a></li>
                         <li><a href="#">Discussions</a></li>
@@ -56,10 +56,100 @@
                         <label>Points</label>
                     </div>
                     <div class="input"><input type="text" id="assignment-points"></div>
+                    <br/>
                     <div class="label"><label>Assignment Group</label></div>
+                    <div>
+                        <select id="assignment-group-dropdown">
+                            <option value="assignments">ASSIGNMENTS</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="label"><label>Display Grade as</label></div>
+                    <div>
+                        <select id="display-grade-dropdown">
+                            <option value="percentages">Percentage</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="label"><label>Submission Type</label></div>
+                    <div>
+                        <select id="submission-type-dropdown">
+                            <option value="online">Online</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Online Entry Options</label><br/>
 
+                        <input type="radio" value="text-entry"
+                            name="online-entry" id="text-entry"/>
+                        <label for="text-entry">Text Entry</label><br/>
+                        <input type="radio" value="website-url"
+                            name="online-entry" id="website-url"/>
+                        <label for="website-url">Website URL</label><br/>
+                        <input type="radio" value="media-recordings"
+                            name="online-entry" id="media-recordings"/>
+                        <label for="media-recordings">Media Recordings</label><br/>
+                        <input type="radio" value="student-annotation"
+                            name="online-entry" id="student-annotation"/>
+                        <label for="student-annotation">Student Annotation</label><br/>
+                        <input type="radio" value="file-uploads"
+                            name="online-entry" id="file-uploads"/>
+                        <label for="file-uploads">File Uploads</label>
+                    </div><br/>
+
+                    <label>Submission Attempts</label>
+                    <div>
+                        <select id="submission-attempts-dropdown">
+                            <option value="unlimited">Unlimited</option>
+                        </select>
+                    </div><br/>
+                    <div class="label"><label>Plagiarism Review</label></div>
+                    <div>
+                        <select id="plagiarism-review-dropdown">
+                            <option value="none">None</option>
+                        </select>
+                    </div><br/>
+                    <div>
+                        <label>Group Assignment</label><br/>
+
+                        <input type="radio" value="group-assignment"
+                            name="group-assignment" id="group-assignment"/>
+                        <label for="group-assignment">This is a group assignment</label><br/>
+                    </div><br/>
+                    <div>
+                        <label>Peer Reviews</label><br/>
+
+                        <input type="radio" value="required-review"
+                            name="peer-reviews" id="required-review"/>
+                        <label for="required-review">Require Peer Reviews</label><br/>
+                    </div><br/>
+                    <div>
+                        <label>Assign</label>
+                        <label>Assign to</label>
+                    </div>
+                    <div class="input"><input type="text" id="assign-to" placeholder="Everyone"></div>
+                    <br/>
+                    <div>
+                        <label>Due</label>
+                    </div>
+                    <div>
+                        <input type="date" id="assignment-due" value="2020-01-01"/>
+                    </div><br/>
+                    <div>
+                        <label>Available from</label>
+                    </div>
+                    <div>
+                        <input type="date" id="available-from" value="2020-01-01"/>
+                    </div><br/>
+                    <div>
+                        <label>Until</label>
+                    </div>
+                    <div>
+                        <input type="date" id="available-until" value="2020-01-01"/>
+                    </div><br/>
+                    <button type="button">Cancel</button>
+                    <button type="button">Save</button>
                     
-
 
                 </td>
             </tr>
