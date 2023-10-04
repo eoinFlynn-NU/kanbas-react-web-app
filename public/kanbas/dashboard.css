@@ -1,0 +1,36 @@
+.wd-dashboard-col {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.wd-card {
+    width: 250px;
+}
+
+.wd-card-img {
+    height: 200px;
+}
+
+.wd-card-title {
+    color: blue;
+}
+
+.wd-card-subtitle {
+    color: grey;
+    margin-bottom: 0px;
+}
+
+.wd-card-text {
+    color: grey;
+    font-size: small;
+    margin-bottom: 6px;
+}
+
+.wd-card-icon {
+    color: grey;
+
+}
+
+.wd-card-icon:hover {
+    color:grey
+}

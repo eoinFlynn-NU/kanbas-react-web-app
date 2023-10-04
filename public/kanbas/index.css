@@ -1,0 +1,71 @@
+/* Sidebar settings */
+
+.wd-sidebar {
+    background-color: black;
+    min-height: 100vh;
+    width: 100px;
+    flex: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    border: none;
+}
+
+.row{
+    --bs-gutter-x:2rem;
+}
+ul {
+    list-style-type: none;
+}
+
+.wd-sidebar-link-box {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd-sidebar-profile {
+    color: gray;
+}
+
+.wd-sidebar-icon {
+    color: red;
+}
+
+a:hover.while-active {
+    color: red;
+}
+
+.while-active {
+    color: red;
+}
+
+.wd-sidebar-active {
+    background-color: white;
+}
+
+.wd-sidebar-links-active {
+    color: red;
+}
+
+.wd-sidebar-links-active:hover {
+    color: red;
+}
+
+a:hover {
+    color: white
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.wd-sidebar-links {
+    padding: 5px;
+    color: white;
+}

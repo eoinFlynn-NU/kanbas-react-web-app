@@ -3,104 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <title>Kanbas Homepage</title>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/kanbas/index.css" rel="stylesheet"/>
+    <link href="/kanbas/tabs.css" rel="stylesheet"/>
+    <link href="/kanbas/home.css" rel="stylesheet"/>
+    <link href="/kanbas/grades.css" rel="stylesheet">
+
 </head>
 <body>
-    <table width="100%">
-        <tbody>
-            <tr valign="baseline">
-                <td>
-                    <ul>
-                        <li><a href="/kanbas/profile/index.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/kanbas/home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="/kanbas/home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="/kanbas/grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <select id="gradebook-dropdown">
-                        <option value="gradebook">Gradebook</option>
-                    </select>
-                    <button type="button">Import</button>
-                    <select id="Export-dropdown">
-                        <option value="Export">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
-                    <h3>Student Names</h3>
-                    <input type="text" id="search-student" placeholder="Search Students">
-                    <h3>Assignment Names</h3>
-                    <input type="text" id="search-assignments" placeholder="Search Assignments">
-                    <button type="button">Apply Filter</button>
-                    <table border="1" width="100%">
-                        <thread>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 Setup out of 100</th>
-                                <th>A2 HTML out of 100</th>
-                                <th>A3 CSS Out of 100</th>
-                                <th>A4 Bootstrap out of 100</th>
-                            </tr>
-                        </thread>
-                        <tbody>
-                            <tr>
-                                <td>Eoin Flynn</td>
-                                <td>90</td>
-                                <td>80</td>
-                                <td>99</td>
-                                <td>85</td>
-                            </tr>
-                            <tr>
-                                <td>Connor Lynch</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>49</td>
-                                <td>99</td>
-                            </tr>
-                            <tr>
-                                <td>Liam Kirby</td>
-                                <td>90</td>
-                                <td>100</td>
-                                <td>20</td>
-                                <td>80</td>
-                            </tr>
-                            <tr>
-                                <td>Evan Calves</td>
-                                <td>100</td>
-                                <td>50</td>
-                                <td>98</td>
-                                <td>90</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-        </tbody>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col wd-sidebar">
+                <ul class="wd-sidebar-list">
+                    <li><img src="/kanbas/northeastern-logo.png" style="width: 90;"/></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                        <a href="/kanbas/profile/index.html" class="wd-sidebar-links">Account</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-tachometer-alt fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Dashboard</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box wd-sidebar-active">
+                        <i class="fas fa-book fa-2x wd-sidebar-icon"></i>
+                        <a href="/kanbas/home.html" class="wd-sidebar-links-active">Courses</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-user-friends fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Groups</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-calendar-alt fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Calendar</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-inbox fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Inbox</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-clock fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">History</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-video fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Studio</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-arrow-alt-circle-right fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Commons</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-question-circle fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Help</a>
+                    </div></li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fas fa-bars fa-1x wd-header-icon"></i>
+                    </div>
+                    <div class="col-8">
+                        <nav class="wd-breadcrumb text-left" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="wd-tab-link" href="#">CS4550.Fall.12631</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col wd-tabs-col">
+                        <ul>
+                            <li class="mb-2"><a class="wd-tab-link" href="/kanbas/home.html">Home</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Modules</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Piazza</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Zoom Meetings</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="/kanbas/assignments/index.html">Assignments</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Quizzes</a></li>
+                            <li class="mb-2"><a class="wd-selected-tab-border wd-tab-link-selected" href="/kanbas/grades.html">Grades</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">People</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Panopto Video</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Discussions</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Announcements</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Pages</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Files</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Rubrics</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Outcomes</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Collaborations</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Syllabus</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-10 col-md-9 col-sm-8">
+                        <div class="row">
+                            <div>
+                                <button type="button" class="btn btn-secondary btn-sm float-end"><i class="fas fa-cog"></i></i></button>
+                                <button type="button" class="btn btn-secondary btn-sm float-end wd-top-button-right-margin"><i class="fas fa-file-export"></i></i> Export</button>
+                                <button type="button" class="btn btn-secondary btn-sm float-end wd-top-button-right-margin"><i class="fas fa-file-import"></i> Import</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label><b>Student Names</b></label>
+                                    <select class="form-select">
+                                      <option value="" disabled selected>Search Students</option>
+                                    </select>
+                                  </div>
+                                  <button type="button" class="btn btn-secondary btn-sm wd-margin"><i class="fas fa-filter"></i> Apply Filters</button>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label><b>Assignment Name</b></label>
+                                    <select class="form-select">
+                                      <option value="" disabled selected>Search Assignments</option>
+                                    </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered wd-table">
+                                        <thread>
+                                            <tr>
+                                                <th scope="col">Student Name</th>
+                                                <th scope="col">A1 Setup out of 100</th>
+                                                <th scope="col">A2 HTML out of 100</th>
+                                                <th scope="col">A3 CSS Out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                                <th scope="col">A4 Bootstrap out of 100</th>
+                                            </tr>
+                                        </thread>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Eoin Flynn</td>
+                                                <td>90</td>
+                                                <td><input type="text" class="form-control" value="100%"></td>
+                                                <td>99</td>
+                                                <td>85</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Connor Lynch</td>
+                                                <td>100</td>
+                                                <td>80</td>
+                                                <td>49</td>
+                                                <td>99</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Liam Kirby</td>
+                                                <td>90</td>
+                                                <td>100</td>
+                                                <td>20</td>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Evan Calves</td>
+                                                <td>100</td>
+                                                <td>50</td>
+                                                <td>98</td>
+                                                <td>90</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+

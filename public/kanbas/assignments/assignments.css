@@ -1,0 +1,14 @@
+.wd-assignment-link {
+    font-size: 16px;
+    color: black;
+}
+
+.wd-assignment-link:hover {
+    color: black;
+}
+
+.wd-assignment-edit-icon {
+    color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+}

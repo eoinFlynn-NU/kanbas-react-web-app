@@ -1,0 +1,20 @@
+.wd-text-green {
+    color: green;
+    padding-right: 10px;
+}
+
+.wd-form-spacing {
+    margin-bottom: 20px;
+}
+
+.wd-input-box {
+    width: 300px;
+}
+
+.wd-input-box-small {
+    width: 200px;
+}
+
+.wd-assign-button {
+    margin-top: 5px;
+}

@@ -1,0 +1,89 @@
+.wd-header-icon {
+    color: red;
+    font-size: x-large;
+    padding-top: 5px;
+}
+
+.btn-secondary {
+    background-color: lightgray;
+    color: black;
+}
+
+.wd-breadcrumb {
+    --bs-breadcrumb-divider: '>';
+    width: 100%;
+    padding-top: 5px;
+}
+
+.wd-list-indented-item {
+    margin-bottom: 0px;
+}
+
+.wd-list-indented-text-div {
+    padding-left: 0px;
+}
+
+.wd-list-checkmark {
+    color: green;
+    padding-right: 10px;
+}
+
+.wd-right-col-buttons {
+    width: 70%;
+    margin-bottom: 3px;
+}
+
+.wd-right-col-top-button {
+    margin-top: 15px;
+}
+
+.wd-right-col-bottom-button {
+    margin-bottom: 15px;
+}
+
+.wd-right-col-hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-list-plus {
+    color: gray;
+    padding-right: 10px;
+}
+
+.wd-list-header {
+    padding-left: 5px;
+}
+
+.wd-list-group-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wd-list-item-border {
+    border-left: 4px solid green;
+}
+
+.wd-col-buttons {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.wd-coming-up-title {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.wd-coming-up-title:hover {
+    color: red;
+}
+
+.wd-coming-up-text {
+    color: gray;
+}
+
+.wd-coming-up-text:hover {
+    color: gray;
+}
+
+

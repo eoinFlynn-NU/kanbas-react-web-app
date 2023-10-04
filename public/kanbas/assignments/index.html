@@ -3,128 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>Kanbas Homepage</title>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/kanbas/index.css" rel="stylesheet"/>
+    <link href="/kanbas/tabs.css" rel="stylesheet"/>
+    <link href="/kanbas/home.css" rel="stylesheet"/>
+    <link href="/kanbas/assignments/assignments.css" rel="stylesheet">
+
 </head>
 <body>
-    <table width="100%">
-        <tbody>
-            <tr valign="baseline">
-                <td>
-                    <ul>
-                        <li><a href="/kanbas/profile/index.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/kanbas/home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="/kanbas/home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="/kanbas/grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <input type="text" id="search-assignments" placeholder="Search for Assignments">
-                    <button type="button">Group</button>
-                    <button type="button">Assignment</button>
-                    <select id="edit-assignment-dates-dropdown">
-                        <option selected value="edit-assignment-dates">Edit Assignment Dates</option>
-                    </select>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col wd-sidebar">
+                <ul class="wd-sidebar-list">
+                    <li><img src="/kanbas/northeastern-logo.png" style="width: 90;"/></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                        <a href="/kanbas/profile/index.html" class="wd-sidebar-links">Account</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-tachometer-alt fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Dashboard</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box wd-sidebar-active">
+                        <i class="fas fa-book fa-2x wd-sidebar-icon"></i>
+                        <a href="/kanbas/home.html" class="wd-sidebar-links-active">Courses</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-user-friends fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Groups</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-calendar-alt fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Calendar</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-inbox fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Inbox</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-clock fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">History</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-video fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Studio</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-arrow-alt-circle-right fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Commons</a>
+                    </div></li>
+                    <li><div class="wd-sidebar-link-box">
+                        <i class="fas fa-question-circle fa-2x wd-sidebar-icon"></i>
+                        <a href="#" class="wd-sidebar-links">Help</a>
+                    </div></li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fas fa-bars fa-1x wd-header-icon"></i>
+                    </div>
+                    <div class="col-8">
+                        <nav class="wd-breadcrumb text-left" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="wd-tab-link" href="#">CS4550.Fall.12631</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-3 justify-content-center">
+                        <button type="button" class="btn btn-secondary btn-sm float-end"><i class="fas fa-glasses"></i> Student View</button>
+                    </div>
                     <hr>
-                    <h3>ASSIGNMENTS 40% of Total
-                        <select id="edit-dropdown">
-                            <option selected value="edit">Edit</option>
-                            <option value="speed-grader">Speed Grader</option>
-                            <option value="duplicate">Duplicate</option>
-                            <option value="delete">Delete</option>
-                            <option value="move-to">Move To...</option>
-                            <option value="send-to">Send To...</option>
-                            <option value="copy-to">Copy To...</option>
-                            <option value="share-to-commons">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="edit.html">A1 - ENV + HTML <br>Multiple Modules</a> | Not available yet</li>
-                        <li><a href="edit.html">A2 - CSS + BOOTSTRAP <br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="edit.html">A3 - JS + REACT <br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="edit.html">A4 - STATE + REDUX <br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="edit.html">A5 - NODE + SESSION <br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="edit.html">A6 - MONGO + MONGOOSE <br>Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                    <h3>QUIZZES 10% of Total
-                        <select id="edit-dropdown">
-                            <option selected value="edit">Edit</option>
-                            <option value="speed-grader">Speed Grader</option>
-                            <option value="duplicate">Duplicate</option>
-                            <option value="delete">Delete</option>
-                            <option value="move-to">Move To...</option>
-                            <option value="send-to">Send To...</option>
-                            <option value="copy-to">Copy To...</option>
-                            <option value="share-to-commons">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="#">Q1 - HTML <br>Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Q2 - CSS <br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="#">Q3 - JS, ES6<br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="#">Q4 - NODE<br>Multiple Modules </a>| Not available yet</li>
-                        <li><a href="#">Q5 - MONGO<br>Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                    <h3>EXAMS 20% of Total
-                        <select id="edit-dropdown">
-                            <option selected value="edit">Edit</option>
-                            <option value="speed-grader">Speed Grader</option>
-                            <option value="duplicate">Duplicate</option>
-                            <option value="delete">Delete</option>
-                            <option value="move-to">Move To...</option>
-                            <option value="send-to">Send To...</option>
-                            <option value="copy-to">Copy To...</option>
-                            <option value="share-to-commons">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="#">Midterm<br>Multiple Modules</a> | Not available yet</li>
-                        <li><a href="#">Final<br>Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                    <h3>PROJECT 30% of Total
-                        <select id="edit-dropdown">
-                            <option selected value="edit">Edit</option>
-                            <option value="speed-grader">Speed Grader</option>
-                            <option value="duplicate">Duplicate</option>
-                            <option value="delete">Delete</option>
-                            <option value="move-to">Move To...</option>
-                            <option value="send-to">Send To...</option>
-                            <option value="copy-to">Copy To...</option>
-                            <option value="share-to-commons">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="#">Project<br>Multiple Modules</a> | Not available yet</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </div>
+                <div class="row">
+                    <div class="col wd-tabs-col">
+                        <ul>
+                            <li class="mb-2"><a class="wd-tab-link" href="/kanbas/home.html">Home</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Modules</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Piazza</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Zoom Meetings</a></li>
+                            <li class="mb-2"><a class="wd-selected-tab-border wd-tab-link-selected" href="/kanbas/assignments/index.html">Assignments</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Quizzes</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="/kanbas/grades.html">Grades</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">People</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Panopto Video</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Discussions</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Announcements</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Pages</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Files</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Rubrics</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Outcomes</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Collaborations</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Syllabus</a></li>
+                            <li class="mb-2"><a class="wd-tab-link" href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-10">
+                        <div>
+                            <div class="form-group wd-search-assignments">
+                                <input type="text" class="form-control w-25" id="search-assignments" placeholder="Search for Assignments">
+                              </div>
+                            <button type="button" class="btn btn-secondary btn-sm float-end"><i class="fas fa-ellipsis-v"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm float-end"><i class="fas fa-plus"></i>Assignment</button>
+                            <button type="button" class="btn btn-secondary btn-sm float-end"><i class="fas fa-plus"></i>Group</button>
+                        </div>
+                        <br/>
+                        <hr>
+                        <ul class="list-group wd-list-group-padding">
+                            <li class="list-group-item list-group-item-secondary"><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><b>Assignments</b>
+                                <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-plus wd-list-plus float-end"></i></li>
 
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A1 - ENV + HTML</b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A2 - CSS + BOOTSTRAP</b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A3 - JS + REACT</b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A4 - STATE + REDUX</b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A5 - NODE + SESSION </b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                            <Li class="list-group-item wd-list-item-border">
+                                <div class="row">
+                                    <div class="d-inline">
+                                        <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-edit wd-assignment-edit-icon"></i>
+                                        <a href="edit.html" class="wd-assignment-link"><b>A6 - MONGO + MONGOOSE</b></a>
+                                        <i class="fas fa-ellipsis-v float-end"></i><i class="fas fa-check-circle float-end wd-list-checkmark"></i>
+                                    </div>
+                                </div>
+                            </Li>
+                        </ul>
+                     
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

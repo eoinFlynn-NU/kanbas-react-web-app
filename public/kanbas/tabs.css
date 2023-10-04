@@ -1,0 +1,26 @@
+.wd-tabs-col {
+    width: 200px;
+    flex: 0;
+    padding-left: 0px;
+}
+
+.wd-tab-link {
+    color: red;
+}
+
+.wd-tab-link-selected {
+    color: black;
+}
+
+.wd-tab-link-selected:hover {
+    color: black;
+}
+
+.wd-tab-link:hover {
+    color: red
+}
+
+.wd-selected-tab-border {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
