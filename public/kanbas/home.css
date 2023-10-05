@@ -86,4 +86,25 @@
     color: gray;
 }
 
+.wd-header-black {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .wd-header-icon {
+      color: white;
+    }
+  }
+
+.wd-small-header {
+color:white
+}
+
+.wd-small-header:hover {
+    color: white;
+}
+
+.wd-small-button {
+    color: black;
+}
 
