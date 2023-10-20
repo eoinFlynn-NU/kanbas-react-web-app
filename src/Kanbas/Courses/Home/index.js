@@ -7,7 +7,6 @@ function Home() {
     return (
       <div className="row">
         <div className="col-9">
-            <h2>Home</h2>
             <Modules />
         </div>
         <div className="col col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
