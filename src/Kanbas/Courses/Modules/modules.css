@@ -1,0 +1,9 @@
+.list-group-item.wd-module-item {
+    background-color: lightgray;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.wd-module-hr {
+    margin-top: 10px;
+}

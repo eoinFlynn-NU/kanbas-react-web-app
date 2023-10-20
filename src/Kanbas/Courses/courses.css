@@ -1,0 +1,22 @@
+.wd-breadcrumb {
+    --bs-breadcrumb-divider: '>';
+    width: 100%;
+    padding-top: 5px;
+}
+
+.wd-tab-link {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-tab-link-selected {
+    color: black;
+}
+
+.wd-tab-link-selected:hover {
+    color: black;
+}
+
+.wd-tab-link:hover {
+    color: red
+}

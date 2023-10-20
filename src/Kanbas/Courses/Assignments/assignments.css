@@ -1,0 +1,16 @@
+.wd-assignment-link-item:hover {
+    color: black;
+}
+
+.wd-assignment-icon {
+    color: green;
+}
+
+.wd-assignment-text {
+    font-size: 14px;
+}
+
+.wd-assignment-module {
+    color: red;
+    margin-bottom: 0px;
+}

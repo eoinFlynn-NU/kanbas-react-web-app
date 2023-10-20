@@ -1,0 +1,37 @@
+.wd-right-col-buttons {
+    width: 70%;
+    margin-bottom: 3px;
+}
+
+.wd-right-col-top-button {
+    margin-top: 15px;
+}
+
+.wd-right-col-bottom-button {
+    margin-bottom: 15px;
+}
+
+.wd-coming-up-title {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.wd-coming-up-title:hover {
+    color: red;
+}
+
+.wd-coming-up-text {
+    color: gray;
+}
+
+.wd-coming-up-text:hover {
+    color: gray;
+}
+
+a.wd-coming-up-text {
+    text-decoration: none;
+}
+
+a.wd-coming-up-title {
+    text-decoration: none;
+}
