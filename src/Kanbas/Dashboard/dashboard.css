@@ -35,3 +35,20 @@
 .wd-card-icon:hover {
     color:grey
 }
+
+
+
+
+
+a.list-group-item:hover {
+    color: black;
+}
+
+.wd-course-title {
+    font-size: large;
+}
+
+.wd-bottom-spacing {
+    margin-bottom: 10px;
+}
+
