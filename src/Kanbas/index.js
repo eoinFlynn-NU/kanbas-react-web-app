@@ -14,7 +14,8 @@ function Kanbas() {
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const API_BASE = process.env.REACT_APP_API_BASE;
+  //const API_BASE = process.env.REACT_APP_API_BASE;
+  const API_BASE = "https://kanbas-node-server-app-dt3m.onrender.com"
   const URL = `${API_BASE}/courses`;
 
   const addNewCourse = async () => {
