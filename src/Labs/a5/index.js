@@ -3,11 +3,12 @@ import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
 
 function Assignment5() {
+    const BASE_URL = "https://kanbas-node-server-app-dt3m.onrender.com"
     return (
       <div>
         <h1>Assignment 5</h1>
         <div className="list-group">
-          <a href="http://localhost:4000/a5/welcome"
+          <a href={`${BASE_URL}/a5/welcome`}
              className="list-group-item">
             Welcome
           </a>
