@@ -61,7 +61,7 @@ function ModuleList() {
               }/>
           </div>
           <div className="col-2">
-            <button className="btn btn-primary float-end" onClick={() => handleUpdateModule}>Update</button>
+            <button className="btn btn-primary float-end" onClick={handleUpdateModule}>Update</button>
           </div>
           <div className="col-1">
             <button className="btn btn-success" onClick={handleAddModule}>Add</button>
