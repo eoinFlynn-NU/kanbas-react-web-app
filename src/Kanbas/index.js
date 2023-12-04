@@ -1,4 +1,7 @@
 import KanbasNavigation from "./KanbasNavigation";
+import Signin from "./Users/signin";
+import UserTable from "./Users/table";
+import Account from "./Account";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
@@ -14,7 +17,7 @@ function Kanbas() {
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  //const API_BASE = process.env.REACT_APP_API_BASE;
+  //const API_BASE = "http://localhost:4000/api";
   const API_BASE = "https://kanbas-node-server-app-dt3m.onrender.com/api"
   const URL = `${API_BASE}/courses`;
 
@@ -66,7 +69,9 @@ function Kanbas() {
           <div className="col-10">
               <Routes>
               <Route path="/" element={<Navigate to="Dashboard" />} />
-              <Route path="Account" element={<h1>Account</h1>} />
+              <Route path="/Signin" element={<Signin/>}/>
+              <Route path="/Account" element={<Account />} />
+              <Route path="/admin/users" element={<UserTable />} />
               <Route path="Dashboard" element={
                           <Dashboard
                           courses={courses}
