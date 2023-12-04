@@ -57,6 +57,9 @@ function Account() {
           </Link>
         </div>
       )}
+      {!account && (
+        <Link to="/kanbas/Users/signin.js" className="btn btn-primary">Sign In</Link>
+      )}
     </div>
   );
 }
